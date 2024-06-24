@@ -1,0 +1,276 @@
+@import url("https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400");
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap');
+
+html {
+
+}
+
+body {
+
+}
+
+
+/* Dropdown Hamburger Menu
+------------------------------------------------------------------------------- */
+nav {
+    width:414px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    background-color: purple;
+    position: absolute;
+    top: 0;
+  }
+
+
+
+
+#menu {
+   
+    
+
+
+
+}
+
+  
+  /* span p {
+    display: inline;
+    align: auto;
+    padding-left:50px;
+    text-align: center;
+  } */
+  nav ul {
+    text-align:center;
+    margin:0;
+    padding:0;
+    list-style:none;
+    overflow:hidden;
+    max-height:0;
+    transition: max-height .2s ease-out;
+
+
+  }
+
+  #menu {
+    /* max-height: 50px; */
+    background-color: #030A8C;
+    overflow: hidden;
+    grid-column: 1 / 5;
+    grid-row: 2 / 9;
+    position: absolute;
+    /* z-index: 1; */
+    text-align: center;
+    width: 414px;
+
+  }
+  nav h2 {
+    visibility:hidden;
+    height:1px;
+    width: 1px;
+  }
+  nav li a {
+    display:block;
+    padding:20px 20px;
+    text-decoration:none;
+    color:white;
+  }
+  nav a:hover, nav input:hover {
+      background-color: black;
+  }
+
+  label#hamburger {
+    grid-column: 0 / 2;
+    grid-row: 1 / 2;
+    width: 40px;
+    z-index: 2;
+  }
+
+  #logo {
+    /* position: absolute; 
+    top: 0; 
+    justify-content: center;
+    display: inline; */
+  }
+
+  #logo {
+    /* justify: center; */
+    
+    /* position:absolute;  */
+    grid-column: 1 / 6;
+    /* width: 100%; */
+
+    /* padding-left: 200px; */
+  }
+
+  #avatar {
+    grid-column: 3 / 5;
+    grid-row: 0 / 1;
+  }
+
+
+  /* ---------------------------------------------- */
+  nav label {
+      cursor: pointer;
+      /* display: inline-block; */
+      padding: 5px 20px;
+      position: relative;
+      user-select: none;
+  }
+
+
+  
+  label span {
+      background-color: #ffffff;
+      /* display: inline-block; */
+      height: 2px;
+      position: relative;
+      transition: background-color .2s ease-out;
+      /* width: 18px; */
+  }
+  label span:before, label span:after {
+      background: #ffffff;
+      content: '';
+      display: inline-block;
+      /* height: 100%; */
+      position: absolute;
+      /* transition: all .2s ease-out; */
+      /* width: 100%; */
+  }
+  label span:before {
+      /* top: 5px; */
+  }
+  label span:after {
+      /* top: -5px; */
+  }
+
+  label p {
+    margin: 0 auto;
+  }
+
+
+
+  /* ---------------------------------------------- */
+
+
+
+  input {
+    display:none;
+  }
+  input:checked ~ ul {
+      max-height: 500px;
+  }
+  input:checked ~ label span {
+      background: transparent;
+  }
+  input:checked ~ label span:before {
+      /* transform: rotate(-45deg); */
+  }
+  input:checked ~ label span:after {
+      /* transform: rotate(45deg); */
+  }
+  input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+      /* top: 0; */
+  }
+
+
+
+  @media screen and (min-width: 768px){
+    nav {
+    width:768px;
+  }
+    nav ul {
+      overflow:visible;
+      position:absolute;
+      top:0px;
+      display:grid;
+    }
+    nav li a {
+      padding:20px;
+    }
+    label span, input {
+      display:none;
+    }
+  }
+
+
+
+  @media screen and (min-width: 1280px){
+    nav {
+    width:1280px;
+  }
+    nav ul {
+      overflow:visible;
+      position:absolute;
+      top:25px;
+      display:flex;
+    }
+    nav li a {
+      padding:20px;
+    }
+    label span, input {
+      display:none;
+    }
+  }
+
+/* Fonts and Sizing 
+------------------------------------------------------------------------------- */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+h1, h2, h3, nav a, nav span, menu li, #social li, footer {
+    font-family: "Bebas neue", Arial, sans-serif ;
+}
+
+p, dd, li, nav, input {
+    font-family: "Montserrat", Arial, sans-serif;
+}
+
+dt {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: bold;
+}
+
+h1 { 
+    font-size: 40px;
+    margin-top: 150px;
+}
+
+h2 {
+    font-size: 30px;
+} 
+
+h3 {
+    font-size: 25px;
+}
+
+nav a, nav span, menu li, #social li, footer { 
+    font-size: 20px;
+}
+
+p, dd, li, nav, input, dt {
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
