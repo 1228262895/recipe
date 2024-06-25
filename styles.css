@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     background: rgba(122, 191, 191, .5);
 }
@@ -309,6 +311,58 @@ button:hover {
 }
 
 
+/* Details, Ingredients, Directions
+------------------------------------------------------------------------------- */
+
+#DetailsIngredientsDirections {
+    
+}
+
+#details dl {
+    margin: 0 10px;
+    line-height: 1.3;
+}
+
+#details dt {
+    font-weight: bold;
+    display: inline-block;
+}
+
+#details dd {
+    display: inline;
+    margin-left: 10px;
+}
+
+#details dd:after {
+    display: block; 
+    content: '';
+}
+
+
+
+#ingredients ul {
+    line-height: 2; 
+    list-style: square;
+    padding-left: 25px;
+}
+
+#ingredients li {
+    padding-left: 12px;
+}
+
+#directions ol {
+    padding-left: 25px;
+
+    line-height: 1.5;
+}
+
+#directions li {
+    padding-left: 12px;
+    padding-bottom: 12px;
+}
+
+
+
   /* ---------------------------------------------- */
   nav label {
       cursor: pointer;
@@ -385,6 +439,10 @@ h1, h2, h3, nav a, nav span, nav p, menu li, #social li, #options li, footer {
     font-family: "Bebas neue", Arial, sans-serif ;
 }
 
+body h2 {
+    margin: 10px 20px;
+}
+
 p, dd, li, nav, input {
     font-family: "Montserrat", Arial, sans-serif;
 }
@@ -405,6 +463,7 @@ h1 {
 
 h2 {
     font-size: 30px;
+    text-align: center;
 } 
 
 h3 {
@@ -560,7 +619,28 @@ p, dd, li, nav, input, dt {
         }
     
 
-        
+        /* Details, Ingredients, Directions
+        ------------------------------------------------------------------ */
+
+        #DetailsIngredientsDirections {
+            display: grid; 
+            grid-template-columns: 1fr 2.5fr;
+        }
+
+        #details {
+            grid-column: 1 / 3;
+            text-align: center;
+        }
+
+        #ingredients {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        #directions {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
 
 
 
@@ -570,7 +650,7 @@ p, dd, li, nav, input, dt {
 
 
   /* For Screens 1280px and Wider
-------------------------------------------------------------------------------- */
+    ------------------------------------------------------------------------------- */
 
   @media screen and (min-width: 1280px){
     
@@ -673,7 +753,7 @@ p, dd, li, nav, input, dt {
     
     [src="images/street-tacos.png"] {
         /* clear: both; */
-        height: 802px;
+        height: 804px;
         width: auto;
     }
 
@@ -684,8 +764,53 @@ p, dd, li, nav, input, dt {
 
     #description {
         line-height: 2.2;
-        
     }
+
+      /* Details, Ingredients, Directions
+        ------------------------------------------------------------------ */
+
+        #DetailsIngredientsDirections {
+            grid-template-columns: 1fr 3.5fr;
+        }
+
+
+        #details {
+            background-color: #000000;
+            color: #7ABFBF;
+            padding-bottom: 10px;
+        }
+        #details dl {
+            display: grid; 
+            grid-template-rows: 1fr 1fr;
+        }
+        
+        #details dt {
+            grid-row: 1 / 2;
+        }
+        
+        #details dd {
+            grid-row: 2 / 3;
+            margin-left: 0px;
+        }
+        
+        #details dd:after {
+            display: block; 
+            content: '';
+        }
+
+
+        #ingredients {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        #directions {
+            grid-column: 2 / 5;
+            grid-row: 2 / 3;
+        }
+        #directions li {
+            padding: 10px 15px;
+        }
+
 
 
 
