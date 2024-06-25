@@ -1,51 +1,26 @@
 @import url("https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400");
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
     background: rgba(122, 191, 191, .5);
 }
-
 body {
-
     background-color: #F2F2F2;
     width: 414px;
     margin: 0 auto;
 }
-
-
 /* Dropdown Hamburger Menu
 ------------------------------------------------------------------------------- */
 nav {
     width:414px;
     display: grid;
     grid-template-columns: 80px 1fr 80px;
-    /* grid-template-rows: 1fr; */
-    /* overflow: hidden; */
-
-    /* border-bottom: 2px solid lightgray; */
     background-color: #FFFFFF;
-
     position: absolute;
     top: 0;
- 
     text-align: center;
-  }
-
-/* nav:nth-child(4) {
-    background-color: #F2F2F2;
-} */
-
-#menu {
-   
-    
-
-
-
 }
-
 nav span {
     margin: 0 auto;
     padding: 0;
@@ -54,30 +29,14 @@ nav p {
     margin: 0 auto;
     padding: 0;
 }
-  
-
-
-  /* span p {
-    display: inline;
-    align: auto;
-    padding-left:50px;
-    text-align: center;
-  } */
-
-
-  #menu {
-    /* max-height: 50px; */
+#menu {
     background-color: #F2F2F2;
     overflow: hidden;
     grid-column: 1 / 3;
     grid-row: 2 / 9;
     position: absolute;
-    /* z-index: 1; */
     text-align: center;
     width: 414px;
-    /* max-height: fit-content; */
-
-
   }
   nav h2 {
     visibility: hidden;
@@ -88,104 +47,49 @@ nav p {
   }
   nav li a {
     display:block;
-    /* padding:20px 20px; */
     text-decoration:none;
     color: #EB5428;
     margin: 10px 0px;
-    
   }
   nav a:hover, nav input:hover {
       background-color: rgba(122, 191, 191, .5);
   }
-
   label#hamburger {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     width: 40px;
-    /* z-index: 2; */
   }
-
   label#hamburger:hover {
     background-color: rgba(122, 191, 191, .5);
   }
-
   nav #logoLink {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    /* position: absolute; */
-    /* width: 150px; */
-    /* border: 5px solid tomato; */
     width: 100%;
     height: 100%;
-    
-    
     background-color: #EB5428;
-
   }
 
   #logo {
-    /* position: absolute;  */
-    /* top: 0;  */
-    /* justify-content: center; */
-    /* display: inline; */
     grid-column: 2 / 3;
-    /* border: 5px solid tomato; */
     width: 100%;
-    /* height: 100%; */
-    /* width: 200px; */
-
-    /* background-color: #EB5428; */
   }
-
-  #links:first-child {
-    /* grid-row: 1 / 2; */
-  }
-
-
   nav a {
     align-self: center;
     justify-self: center
   }
-
   nav p {
     align-self: center;
     justify-self: center
   }
-
-  nav a:last-child {
-    grid-column: 3 / 4;
-    /* align-self: center; */
-    /* justify-self: center; */
-
-    grid-row: 1 / 2;
-    /* justify-content: center; */
-    width: 100%;
-    height: 100%;
-    align-content: center;
-    justify-content: center;
-   
-    
-  }
-
-
-
-
   #avatarLink {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
-    /* border: 5px solid red; */
     align-content: center;
-    
+    margin: auto;
   }
-
-  #avatarLink a {
-    /* border: 3px solid green; */
-  /* padding: 0px 0px; */
-  }
-
 /* Dropdown Menu Icons
 ------------------------------------------------------------------------------- */
-
   nav ul {
     text-align:center;
     margin:0;
@@ -196,17 +100,11 @@ nav p {
     transition: max-height .2s ease-out;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-
-
   }
-
   ul li img {
     width: 70px;
     height: 70px;
-    /* display: inline-block; */
   }
-
 
 /* Search
 ------------------------------------------------------------------------------- */
@@ -215,218 +113,163 @@ nav p {
     display: grid;
     grid-template-rows: 1fr;
     padding: 15px 0px;
-    /* margin-left: 10px; */
-    /* grid-row: 2 / 3; */
-    /* grid-column: 1/ 4; */
-    /* justify-content: center; */
-    /* text-align: center; */
-    /* align-items: center; */
-    /* align-self: center; */
-    /* align-content: center; */
     justify-content: center;
     justify-items: center;
-
-    /* position: relative;  */
-
-    
-/*     
-    top: 90px;
-    left: 35px;
-    z-index: -1; */
-
-
-
-    /* justify-content: center;
-    margin: 0 auto;
-    justify-self: center;
-    align-self: center;
-    align-items: center; 
-    justify-items: center; */
-
 }
-
 #searchbox {
     background-color: #F2F2F2;
     grid-row: 2; 
     grid-column: 1 / 4;
 }
-
 form input {
     width: 260px;
     border: 2px solid #EB5428;
     grid-row: 1 / 2;
-
 }
-
 #search input, #search button {
     height: 45px; 
     margin: 0;
 } 
-
 button {
     grid-row: 1 / 2;
     border: 2px solid #EB5428;
     background-color: #EB5428;
-    /* width: fit-content;
-    height: fit-content; */
 }
 button:hover {
     border: 2px solid #F2F2F2;
 }
 
-
 /* Options menu (Save, Share, Print, Jump) 
 ------------------------------------------------------------------------------- */
-
-
 #options ul {
     list-style: none; 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     text-decoration: none;
     padding: 0px;;
-    
 }
 #options li {
     color:#EB5428;
     text-align: center;
-
-
 }
-
-
-
-
 
 /* Street Tacos
 ------------------------------------------------------------------------------- */
 [src="images/street-tacos.png"] {
     width: 414px;
 }
-
-
 #description {
     line-height: 1.8;
     padding: 0px 10px;
 }
 
-
 /* Details, Ingredients, Directions
 ------------------------------------------------------------------------------- */
-
 #DetailsIngredientsDirections {
     
 }
-
 #details dl {
     margin: 0 10px;
     line-height: 1.3;
 }
-
 #details dt {
     font-weight: bold;
     display: inline-block;
 }
-
 #details dd {
     display: inline;
     margin-left: 10px;
 }
-
 #details dd:after {
     display: block; 
     content: '';
 }
-
-
-
 #ingredients ul {
     line-height: 2; 
     list-style: square;
     padding-left: 25px;
 }
-
 #ingredients li {
     padding-left: 12px;
 }
-
 #directions ol {
     padding-left: 25px;
 
     line-height: 1.5;
 }
-
 #directions li {
     padding-left: 12px;
     padding-bottom: 12px;
 }
 
-
 /* Sides
 ------------------------------------------------------------------------------- */
-
 #sides {
     background-color: #7ABFBF;
+    display: grid; 
+    grid-template-columns: 1fr; 
+}
+#sides figure {
+    display: grid; 
+    grid-template-columns: 100px 1fr; 
+    grid-template-rows: 35px 25px 40px;
+    column-gap: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+#sides img {
+    width: 100px; 
+    grid-column: 1 / 2;
+}
+#sides figcaption {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0px;
+}
+#sides p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 0px;
+}
+#sides dl {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin: 15px 0px;
+}
+#sides dd {
+    margin: 0px;
 }
 
-
-
-
   /* ---------------------------------------------- */
-  nav label {
-      cursor: pointer;
-      /* display: inline-block; */
-      padding: 5px 20px;
-      position: relative;
-      user-select: none;
-  }
+nav label {
+    cursor: pointer;
+    padding: 5px 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    background-color: #ffffff;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+}
+label span:before, label span:after {
+    background: #ffffff;
+    content: '';
+    display: inline-block;
+    position: absolute;
+}
 
-
-  
-  label span {
-      background-color: #ffffff;
-      /* display: inline-block; */
-      height: 2px;
-      position: relative;
-      transition: background-color .2s ease-out;
-      /* width: 18px; */
-  }
-  label span:before, label span:after {
-      background: #ffffff;
-      content: '';
-      display: inline-block;
-      /* height: 100%; */
-      position: absolute;
-      /* transition: all .2s ease-out; */
-      /* width: 100%; */
-  }
-  label span:before {
-      /* top: 5px; */
-  }
-  label span:after {
-      /* top: -5px; */
-  }
-
-  label span {
-    margin: 0 auto;
-  }
-
-
-
-  /* ---------------------------------------------- */
-
-
-
-  input#dropdown {
-    display:none;
-  }
-  input#dropdown:checked ~ ul {
-      max-height: 550px;
-  }
-  input#dropdown:checked ~ label span {
-      background: transparent;
-  }
- 
+/* ---------------------------------------------- */
+input#dropdown {
+display:none;
+}
+input#dropdown:checked ~ ul {
+    max-height: 550px;
+}
+input#dropdown:checked ~ label span {
+    background: transparent;
+}
 
 /* Fonts and Sizing 
 ------------------------------------------------------------------------------- */
@@ -434,269 +277,281 @@ button:hover {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-
-
-  .montserrat {
+}
+.montserrat {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-
+}
 h1, h2, h3, nav a, nav span, nav p, menu li, #social li, #options li, footer {
     font-family: "Bebas neue", Arial, sans-serif ;
 }
-
 body h2 {
     margin: 10px 20px;
 }
-
 p, dd, li, nav, input {
     font-family: "Montserrat", Arial, sans-serif;
 }
-
 dt {
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: bold;
 }
-
 h1 { 
     font-size: 40px;
     margin-top: 150px;
     padding-top: 10px;
-    /* margin-left: auto;
-    margin-right: auto; */
     text-align: center;
 }
-
 h2 {
     font-size: 30px;
     text-align: center;
 } 
-
-h3 {
+h3, figcaption {
     font-size: 25px;
+    font-family: "Bebas neue", Arial, sans-serif ;
 }
-
 nav a, nav span, nav p, menu li, #social li, footer { 
     font-size: 20px;
 }
-
 p, dd, li, nav, input, dt {
     font-size: 16px;
+}
+
+/* Footer and Social
+----------------------------------------------------------- */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 180px 55px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+footer h2 {
+    visibility: hidden;
+    display: none;
+    grid-column: -1 / 1;
+    grid-row: -1 / 1;
+    content: '';
+}
+footer img {
+    width: 180px;
+    height: auto;
+    grid-row: 2 / 3;
+    justify-self: center;
+}
+footer ul {
+    list-style: none;
+}
+
+footer h3 {
+    visibility: hidden;
+}
+footer small {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+}
+#social ul {
+    display: grid; 
+    grid-template-columns: repeat(4, 70px);
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+#social li {
+    text-align: center;
+    color: #EB5428;
+}
+li:hover {
+    background-color: #7ABFBF;
 }
 
 
 /* For Screens 768px and Wider
 ------------------------------------------------------------------------------- */
-
-  @media screen and (min-width: 768px){
+@media screen and (min-width: 768px){
     
     body {
         width: 768px;
-        
     }
-
     nav {
-    width:768px;
-
+        width:768px;
     }
     nav ul {
-      overflow:visible;
-      position:absolute;
-      top:0px;
-      display:grid;
+        overflow:visible;
+        position:absolute;
+        top:0px;
+        display:grid;
     }
     ul#menu {
         background-color: #FFFFFF;
     }
-    nav li a {
-      /* padding: 10px 10px; */
-      /* margin: 10px 0px; */
-    }
     label span, input#dropdown {
       display:none;
     }
-
     nav input#dropdown {
         grid-column: -1 / 1;
         grid-row: -1 / 1;
         width: 0px;
-        /* display: none; */
     }
-
     label#hamburger {
         grid-column: -1 / 1;
         grid-row: -1 / 1;
         width: 0px;
         display: none;
     }
-
     #logo {
         grid-column: 1 / 2;
     }
-
-
     h1 { 
         padding-top: 25px;
         text-align: left;
         padding-left: 15px;
         margin-top: 175px;
     }
-
-
     #search {
         position: absolute; 
         top: 0px;
         left: 350px;
         z-index: 2;
     }
-
     #options {
         background-color: rgba(255, 255, 255, 0.675);
         position: absolute;
         width: 768px;
     }
-
     [src="images/street-tacos.png"] {
         width: 768px;
     }
-  
 
 /* Dropdown Menu Icons
     ----------------------------------------------- */
     nav {
         display: grid;
-     
         grid-template-rows: 1fr 100px;
-        /* overflow: hidden; */
-    
         background-color: #FFFFFF;
         position: absolute;
         top: 0;
-     
         text-align: center;
-        }
+    }
+    nav #logoLink {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width:100%;
+        height: 100%;
+        align-content: center;
+    }
+    #menu {
+    overflow: visible;
+    grid-column: 1 / 3;
+    grid-row: 2 / 9;
+    position: absolute;
+    text-align: center;
+    width: 768px;
+    }
+    nav ul {
+    text-align:center;
+    margin:0;
+    padding:0;
+    list-style:none;
+    max-height:0;
+    transition: max-height .2s ease-out;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    }
+    ul li img {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+    }
 
- 
-        
-        nav #logoLink {
-            grid-column: 1 / 2;
-            grid-row: 1 / 2;
-            width:100%;
-            height: 100%;
+    /* Details, Ingredients, Directions
+    ------------------------------------------------------------------ */
 
-           
-            align-content: center;
-        }
-    
-        #menu {
-            overflow: visible;
-            grid-column: 1 / 3;
-            grid-row: 2 / 9;
-            position: absolute;
-            /* z-index: 1; */
-            text-align: center;
-            width: 768px;
-            /* max-height: fit-content; */
-        
-        
-          }
-    
-    
-        nav ul {
-            
-            text-align:center;
-            margin:0;
-            padding:0;
-            list-style:none;
-            /* overflow:hidden; */
-            max-height:0;
-            transition: max-height .2s ease-out;
-    
-            display: grid;
-            grid-template-columns: repeat(7,1fr);
-    
-    
-        }
-    
-        ul li img {
-            width: 50px;
-            height: 50px;
-            display: inline-block;
-        }
-    
+    #DetailsIngredientsDirections {
+        display: grid; 
+        grid-template-columns: 1fr 2.5fr;
+    }
+    #details {
+        grid-column: 1 / 3;
+        text-align: center;
+    }
+    #ingredients {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #directions {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
 
-        /* Details, Ingredients, Directions
-        ------------------------------------------------------------------ */
+    /* Sides
+    ----------------------------------------------------------- */
 
-        #DetailsIngredientsDirections {
-            display: grid; 
-            grid-template-columns: 1fr 2.5fr;
-        }
-
-        #details {
-            grid-column: 1 / 3;
-            text-align: center;
-        }
-
-        #ingredients {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-        #directions {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-        }
-
-
-
-
-
-  }
-
-
+    #sides {
+        grid-template-columns: 1fr 1fr; 
+        padding-bottom: 10px;
+    }
+    #sides figure {
+        margin-left: 0px;
+    }
+    #sides h2 {
+        grid-row: -1 / 1; 
+        grid-column: -1 / 1;
+    }
+    #sides dt {
+        display:inline-block;
+    }
+    #sides dd {
+        display: inline; 
+    }
+    /* Footer and Social
+    ----------------------------------------------------------- */
+    footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+    #social ul {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        padding-top: 20px;
+    }
+    footer img {
+        grid-column: 1 / 2;
+        grid-row: 1/ 2;
+        padding: 45px 0px 20px 0px;
+    }
+}
 
   /* For Screens 1280px and Wider
     ------------------------------------------------------------------------------- */
 
-  @media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px){
     
     body {
         width: 1280px;
-        
     }
-    
     nav {
         grid-template-columns: 120px 1fr 120px;
         width:1280px;
         grid-template-rows: 120px;
-        
     }
-
     nav ul {
-      overflow:visible;
-      position:absolute;
-      top:25px;
-
-      justify-self: center;
-      align-items: center;
+      /* position:absolute; */
+      padding-top: 20px;
+      padding-left: 140px;
     }
-
     nav ul li {
         margin: auto;
     }
-
-    nav li a {
-      padding:0px 11px;
-      
-      
+    svg#logo {
+        padding-top: 0px;
     }
     label span, input#dropdown {
       display:none;
     }
-
     #menu {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
@@ -704,45 +559,30 @@ p, dd, li, nav, input, dt {
         justify-content: center;
         justify-items: center;
     }
-
-
     nav ul { 
         width: fit-content;
     }
-
-    
-
-
     #avatarLink {
-        
         align-content: center;
-        
-
     }
-
     #search {
         position: absolute; 
         top: 150px;
         left: 500px;
         z-index: 2;
     }
-
-
     h1 { 
         padding-top: 100px;
         text-align: center;
         margin-top: 125px;
     }
-
     #options {
         background-color: #F2F2F2;
         position: relative;
-        /* float: left; */
         border: 2px solid #EB5428;
         width: 100px;
         height: 800px;
     }
-
     #options ul {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
@@ -750,102 +590,132 @@ p, dd, li, nav, input, dt {
         width: 100px;
         height: 100px;
         margin: 50px 0px;
-
-
-
-        /* float: left; */
     }    
-
     #options li {
         margin: 10px 0px;
     }
-    
     [src="images/street-tacos.png"] {
-        /* clear: both; */
         height: 804px;
         width: auto;
     }
-
     #streetTacos {
         display: grid; 
         grid-template-columns: 100px auto 1fr;
     }
-
     #description {
         line-height: 2.2;
     }
+    /* Details, Ingredients, Directions
+    ------------------------------------------------------------------ */
 
-      /* Details, Ingredients, Directions
-        ------------------------------------------------------------------ */
-
-        #DetailsIngredientsDirections {
-            grid-template-columns: 1fr 3.5fr;
-        }
-
-
-        #details {
-            background-color: #000000;
-            color: #7ABFBF;
-            padding-bottom: 10px;
-        }
-        #details dl {
-            display: grid; 
-            grid-template-rows: 1fr 1fr;
-        }
-        
-        #details dt {
-            grid-row: 1 / 2;
-        }
-        
-        #details dd {
-            grid-row: 2 / 3;
-            margin-left: 0px;
-        }
-        
-        #details dd:after {
-            display: block; 
-            content: '';
-        }
+    #DetailsIngredientsDirections {
+        grid-template-columns: 1fr 3.5fr;
+    }
 
 
-        #ingredients {
-            grid-column: 1 / 2;
-            grid-row: 2 / 3;
-        }
-        #directions {
-            grid-column: 2 / 5;
-            grid-row: 2 / 3;
-        }
-        #directions li {
-            padding: 10px 15px;
-        }
+    #details {
+        background-color: #000000;
+        color: #7ABFBF;
+        padding-bottom: 10px;
+    }
+    #details dl {
+        display: grid; 
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    #details dt {
+        grid-row: 1 / 2;
+    }
+    
+    #details dd {
+        grid-row: 2 / 3;
+        margin-left: 0px;
+    }
+    
+    #details dd:after {
+        display: block; 
+        content: '';
+    }
+
+    #ingredients {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    #ingredients h2 {
+        text-align: left;
+        padding-left: 10px;
+    }
+    #ingredients ul { 
+        list-style: none;
+        padding-left: 10px;
+    }
+    #directions {
+        grid-column: 2 / 5;
+        grid-row: 2 / 3;
+    }
+    #directions li {
+        padding: 10px 15px;
+    }
+
+    /* Sides
+    ----------------------------------------------------------- */
+
+    #sides {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+
+    }
+    #sides figure {
+        display: grid; 
+        grid-template-columns: 260px; 
+        grid-template-rows: 260px 35px 25px 30px;
+        justify-content: space-around;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+    #sides img {
+        width: 260px; 
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #sides figcaption {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        justify-content: left;
+        padding-left: 10px;
+    }
+    #sides p {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        padding-left: 10px;
+    }
+    #sides dl {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+        padding: 0px 0px 20px 10px;
+    }
+
+    /* Footer and Social
+    ----------------------------------------------------------- */
+    footer {
+        grid-template-columns: 1fr 108px 2fr 4fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 0px;
+        padding-bottom: 20px;
+    }
+    #social {
+        grid-row: 1 / 2;
+        grid-column: 4 / 5;
+    }
+    footer small {
+        grid-row: 1 / 2; 
+        grid-column: 2 / 3;
+        padding-top: 65px;
+    }
+    footer img {
+        grid-column: 1 / 2;
+        grid-row: 1/ 2;
+        padding: 40px 0px 20px 15px;
+    }
 
 
-
-
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
+}
