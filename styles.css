@@ -546,8 +546,16 @@ li:hover {
     nav ul li {
         margin: auto;
     }
+    #logoLink {
+        justify-content: center;
+        align-content: center; 
+        align-items: center;
+        justify-self: center;
+        justify-items: center;
+        align-self: center;
+    }
     svg#logo {
-        padding-top: 0px;
+        padding-top: 25px;
     }
     label span, input#dropdown {
       display:none;
@@ -715,6 +723,50 @@ li:hover {
         grid-column: 1 / 2;
         grid-row: 1/ 2;
         padding: 40px 0px 20px 15px;
+    }
+
+
+}
+
+
+/* for Printing - shortened to one page. Black and White. no image (deliberate)
+----------------------------------------------------------- */
+@media print {
+        
+    html {
+        background: #FFFFFF;
+    }
+    body {
+        background-color: #FFFFFF;
+        font-family: Georgia, 'Times New Roman', Times, serif; 
+        display: block;
+        width:80%;
+
+    }
+    h1 {
+        margin-top: auto;
+    }
+
+
+    header, #options, #sides, footer, img {
+        display: none; 
+    }
+    p, h2{
+        margin: 10px 0px;
+        line-height: 1;
+        text-align: left;
+    }
+    #ingredients li {
+        line-height: 1;
+    }
+    #directions li { 
+        line-height: 1;
+        padding-bottom: 5px;
+    
+    }
+    
+    :root {
+
     }
 
 
